@@ -1,4 +1,0 @@
-\$unit::./rtl/baud_rate_gen.sv::./rtl/sync_2ff.sv...@2305820256 02
-tb_uart_uvm4070
-uvm_custom_install_recording4070
-uvm_custom_install_verdi_recording4070

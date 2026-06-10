@@ -1,2 +1,12 @@
+coverage.vdb/
 csrc/
+simv.daidir/
+simv.vdb/
+*.xml
 novas.rc
+*.log
+novas.*
+*.fsdb
+*.key
+*.h
+vdCov.conf
