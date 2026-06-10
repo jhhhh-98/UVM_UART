@@ -36,5 +36,5 @@ vc: sim
 	verdi -cov -covdir coverage.vdb &
 
 clean:
-	rm -rf simv* csrc *.key *.h *.log *.fsdb novas* *.conf *Log
+	rm -rf simv* csrc *.key *.h *.log *.fsdb novas* *.conf *Log *.xml coverage.vdb
 
