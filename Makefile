@@ -1,4 +1,4 @@
-TC ?= apb_rand_test
+TC ?= uart_rand_test
 SEED ?= 1234
 
 VCS_OPTS := -full64 -sverilog 

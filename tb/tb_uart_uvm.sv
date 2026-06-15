@@ -93,7 +93,7 @@ class uart_coverage extends uvm_subscriber #(uart_seq_item);
             bins alt_01 = {8'h55};
             bins alt_10 = {8'haa};
             bins lsb_only = {8'h01};
-            bins msb_only = {8'h10};
+            bins msb_only = {8'h80};
             bins low = {[8'h00:8'h3f]};
             bins mid = {[8'h40:8'hbf]};
             bins high = {[8'hc0:8'hff]};
@@ -360,7 +360,7 @@ class uart_rand_test extends uvm_test;
         uart_rand_seq seq;
         phase.raise_objection(this);
         seq = uart_rand_seq::type_id::create("seq");
-        seq.num_trans = 10;
+        seq.num_trans = 2000;
         seq.start(env.agt.sqr); // squence와 squencer 연결
         phase.drop_objection(this);
     endtask //
