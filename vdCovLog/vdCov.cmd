@@ -32,3 +32,28 @@ gui_list_action -id  CoverageTable.1 -list {covtblInstancesList} uvm_pkg  -colum
 gui_covtable_show -show  { Function Groups } -id  CoverageTable.1  -test  MergedTest
 gui_list_select -id CoverageTable.1 -list covtblFGroupsList { {$unit::uart_coverage::cg_data.cp_tx_data}   }
 gui_list_action -id  CoverageTable.1 -list {covtblFGroupsList} {$unit::uart_coverage::cg_data.cp_tx_data}  -column {} 
+gui_covtable_show -show  { Statistics } -id  CoverageTable.1  -test  MergedTest
+gui_list_expand -id  CoverageTable.1   -list {covtblStatModuleList} Assert
+gui_list_expand -id  CoverageTable.1   -list {covtblStatAssertInstList} Assertion
+gui_list_expand -id  CoverageTable.1   -list {covtblStatAssertInstList} {Cover Property}
+gui_list_expand -id  CoverageTable.1   -list {covtblStatAssertInstList} {Cover Sequence}
+gui_list_expand -id  CoverageTable.1   -list {covtblStatAssertInstList} Total
+gui_list_expand -id  CoverageTable.1   -list {covtblStatAssertDefList} Assertion
+gui_list_expand -id  CoverageTable.1   -list {covtblStatAssertDefList} {Cover Property}
+gui_list_expand -id  CoverageTable.1   -list {covtblStatAssertDefList} {Cover Sequence}
+gui_list_expand -id  CoverageTable.1   -list {covtblStatAssertDefList} Total
+gui_covtable_show -show  { Function Groups } -id  CoverageTable.1  -test  MergedTest
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { {/$unit::uart_coverage::cg_data}   }
+gui_list_action -id  CoverageTable.1 -list {covtblFGroupsList} {$unit::uart_coverage::cg_data.cp_tx_data}  -column {Group} 
+gui_list_select -id CoverageTable.1 -list covtblFGroupsList { {$unit::uart_coverage::cg_data.cp_tx_data}  {/$unit::uart_coverage::cg_data}   }
+gui_list_action -id  CoverageTable.1 -list {covtblFGroupsList} {/$unit::uart_coverage::cg_data}  -column {Group} 
+gui_covtable_show -show  { Module List } -id  CoverageTable.1  -test  MergedTest
+gui_covtable_show -show  { Design Hierarchy } -id  CoverageTable.1  -test  MergedTest
+gui_covtable_show -show  { Module List } -id  CoverageTable.1  -test  MergedTest
+gui_covtable_show -show  { Function Groups } -id  CoverageTable.1  -test  MergedTest
+gui_covtable_show -show  { Asserts } -id  CoverageTable.1  -test  MergedTest
+gui_covtable_show -show  { Statistics } -id  CoverageTable.1  -test  MergedTest
+gui_covtable_show -show  { Asserts } -id  CoverageTable.1  -test  MergedTest
+gui_covtable_show -show  { Tests } -id  CoverageTable.1  -test  MergedTest
+gui_covtable_show -show  { Function Groups } -id  CoverageTable.1  -test  MergedTest
+vdCovExit -noprompt
